@@ -1,0 +1,744 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Test Email</title>
+
+  <style>
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    body {
+      background-color: #f6f6f6;
+      font-family: 'Verdana', sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      font-size: 10px;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+
+    table td {
+      font-family: 'Verdana', sans-serif;
+    }
+
+    a {
+      box-sizing: border-box;
+    }
+
+    .body {
+      background-color: #f8f8f8;
+      width: 100%;
+    }
+
+    /* HEADER */
+    .header {
+      background-color: #1a1a1a;
+      font-size: .9em;
+      color: #ffffff;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    .header__link {
+      color: #ffffff;
+    }
+
+    /* MAIN */
+    .container {
+      display: block;
+      max-width: 600px;
+      width: 600px;
+    }
+
+    .logo {
+      padding-top: 58px;
+      padding-bottom: 102px;
+    }
+
+    .mountains {
+      height: 600px;
+      background-image: url(images/mountains.jpg) !important;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    .mountains__text_big {
+      font-family: 'Times Roman', serif;
+      font-size: 3.5em;
+      line-height: 1.3em;
+
+    }
+
+    .mountains__text_small {
+      font-size: 17px;
+    }
+
+    .more-info {
+      max-width: 600px;
+      width: 100%;
+      padding-top: 9px;
+      padding-right: 60px;
+      padding-bottom: 42px;
+      padding-left: 60px;
+      background-color: #ffffff;
+
+      -webkit-box-shadow: 0 0 20px 0 #999999;
+      -moz-box-shadow: 0 0 20px 0 #999999;
+      box-shadow: 0 0 20px 0 #999999;
+    }
+
+    .more-info-item__title {
+      font-family: 'Times Roman', serif;
+      font-size: 3em;
+      color: #282828;
+
+      padding-top: 29px;
+      padding-bottom: 20px;
+    }
+
+    .more-info-item__text {
+      font-size: 1.3em;
+      color: #282828;
+      padding-bottom: 17px;
+      line-height: 1.3;
+    }
+
+    .more-info-item__btn {
+      background: #18191c;
+
+    }
+
+
+    .btn-big {
+      font-size: 1.3em;
+      text-transform: uppercase;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 23px;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+
+
+    }
+
+    .btn-big:hover {
+      text-decoration: underline;
+      background: #000;
+    }
+
+    .more-info-item {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #d8d8d8;
+    }
+
+
+    .contenttable {
+      width: 140px;
+      float: left;
+    }
+
+
+    .last-info-block {
+      color: #18191c;
+    }
+
+    .media-insta {
+      text-align: center;
+    }
+
+    .center-el {
+      margin-left: 27px;
+      margin-right: 27px;
+    }
+
+    .survez__button {
+      padding-top: 39px;
+    }
+
+    .survez__link {
+      color: #18191c;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+    }
+
+    .survez__link:hover {
+      color: #000000;
+      background: #ffffff;
+      border-color: #000000;
+    }
+
+    .survez__link b {
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    .indent {
+      width: 27px;
+      float: left;
+      height: 1px;
+    }
+
+    .soc-wrap {
+      padding-top: 34px;
+      padding-bottom: 28px;
+    }
+
+    .soc-info {
+      border-top: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+      padding-top: 33px;
+      padding-bottom: 28px;
+    }
+
+    .soc-info__item {
+      width: 33%;
+      float: left;
+    }
+
+
+    .soc-info__indent {
+      width: 1px;
+    }
+
+
+    #soc-left {
+      border-right: 1px solid #d8d8d8;
+    }
+
+    #soc-right {
+      border-left: 1px solid #d8d8d8;
+      padding: 0px 17px;
+    }
+
+    .link-block__link {
+      display: block;
+      font-family: "Verdana", sasn-serif;
+      font-size: 1.1em;
+      line-height: 2.5;
+      color: #000000;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .link-block__link:hover {
+      text-decoration: underline;
+    }
+
+    .social__text {
+      font-family: 'Verdana', sans-serif;
+    }
+
+    .icon-item {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #838383;
+      box-sizing: border-box;
+    }
+
+    .icon-item a {
+      display: block;
+    }
+
+    .indent_small {
+      width: 17px;
+      height: 1px;
+    }
+
+    .social__text {
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      color: #282828;
+      padding-top: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ab9352;
+    }
+
+
+    /* FOOTER */
+
+    #footer {
+      padding-top: 40px;
+      padding-bottom: 48px;
+      text-align: center;
+    }
+
+    .footer__text {
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.1em;
+      color: #7f868e;
+      padding-bottom: 8px;
+    }
+
+    .footer__link {
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.1em;
+      color: #ac944d;
+    }
+
+
+    @media only screen and (max-width: 599px) {
+
+      body {
+        font-size: 12px;
+      }
+
+
+      td[class=header] {
+        font-size: .9em !important;
+      }
+
+      td[class=container] {
+        width: 100%;
+      }
+
+      table[class=container] {
+        width: 100%;
+      }
+
+      table[class=more-info] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+
+      table[class=contenttable] {
+        float: none;
+        width: 100% !important;
+      }
+
+      img[class=media-insta__img] {
+        display: inline-block;
+        width: 80%;
+      }
+
+      table[class=indent] {
+        width: 1px;
+        height: 30px;
+      }
+
+      td[class=more-info-item__title] {
+        text-align: center;
+      }
+
+      td[id=last-info-block] {
+        color: #18191c;
+      }
+
+      td[class=more-info-item__text] {
+        font-size: 16px !important;
+      }
+
+
+
+      table[class=soc-info__item] {
+        width: 100%;
+        display: block;
+      }
+
+      table[id=soc-left] {
+        border-right: 0 !important;
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 20px;
+      }
+
+      table[id=soc-center] {
+        border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 20px 0;
+      }
+
+      table[id=soc-right] {
+        border-left: 0 !important;
+        padding-top: 20px !important;
+      }
+
+      table[id=footer] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      td[class="footer__text"] {
+        padding-bottom: 12px;
+      }
+
+    }
+
+
+    @media only screen and (max-width: 567px) {
+      td[class=header] {
+        font-size: .9em !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+    <tbody align="center">
+
+      <!-- HEADER -->
+      <tr>
+        <td class="header">
+          Si vous ne visualez pas correctement votre newsletter, <a href="#" target="_blank" class="header__link">cliquez-ici</a>
+        </td>
+      </tr>
+      <!--/ HEADER -->
+
+      <!-- GENERAL WRAPPER 100% -->
+      <tr align="center">
+        <td>
+
+          <!-- WRAPPER 600PX -->
+          <table class="container" role="presentation" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+
+              <!-- LOGO -->
+              <tr>
+                <td class="logo" align="center"><img src="images/logo.png" alt="LOGO" width="54px" height="68px"></td>
+              </tr>
+              <!--/ LOGO -->
+
+              <!-- mountains -->
+              <tr>
+                <td>
+                  <table class="mountains" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="middle">
+                          <span class="mountains__text_big">“Live your life by a compass, </br>not a clock.”<br></span>
+                          <span class="mountains__text_small">Stephen Covey</span> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </tr>
+              <!--/ mountains -->
+
+
+              <!-- more-info -->
+              <tr align="center">
+                <td class="container">
+                  <table class="more-info" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+
+                      <tr>
+                        <td class="more-info-item">
+                          <table class="interior" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr class="more-info-item__image" align="center">
+                                <td>
+                                  <img src="images/interior.jpg" alt="interior" width="480px" height="250px">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__title">
+                                  Les dessous du Plaza Athénée
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__text">
+                                  Justo purus sagittis eros, non venenatis urna mauris ut turpis. Nulla
+                                  imperdiet id enim vitae aliquet. Donec feugiat posuere tellus, at auctor
+                                  justo tincidunt ac
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="more-info-item__btn">
+                                  <a class="btn-big" href="#" target="_blank">DÉCOUVRIR</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="line">
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="more-info-item">
+                          <table class="staff" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr class="more-info-item__image" align="center">
+                                <td>
+                                  <img src="images/staff.jpg" alt="staff" width="480px" height="250px">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__title">
+                                  Métier de l’hotellerie : Qu’est ce qu’un Guest expérience Manager ?
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__text">
+                                  Justo purus sagittis eros, non venenatis urna mauris ut turpis. Nulla
+                                  imperdiet id enim vitae aliquet. Donec feugiat posuere tellus, at auctor
+                                  justo tincidunt ac
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="more-info-item__btn">
+                                  <a class="btn-big" href="#" target="_blank">DÉCOUVRIR</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="line">
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="more-info-item">
+                          <table class="stairs" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr class="more-info-item__image" align="center">
+                                <td>
+                                  <img src="images/stairs.jpg" alt="stairs" width="480px" height="250px">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__title">
+                                  Rencontre avec Pierre Decoubertin à l’hotel Plaza Athéne
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="more-info-item__text">
+                                  Justo purus sagittis eros, non venenatis urna mauris ut turpis. Nulla
+                                  imperdiet id enim vitae aliquet. Donec feugiat posuere tellus, at auctor
+                                  justo tincidunt ac
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="more-info-item__btn">
+                                  <a class="btn-big" href="#" target="_blank">DÉCOUVRIR</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <!-- SURVEZ -->
+                          <table class="suivez">
+                            <tbody>
+                              <tr>
+                                <td id="last-info-block" class="more-info-item__title">
+                                  Suivez-nous sur Instagram
+                                </td>
+                              </tr>
+                              <!-- BLOCK WITH PHOTOS -->
+                              <tr>
+                                <td>
+                                  <table class="contenttable" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="media-insta">
+                                          <a class="media-insta__link" href="#" target="_blank">
+                                            <img class="media-insta__img" width="140px" src="images/birds.jpg" alt="Photo birds"></a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!--  -->
+                                  <table class="indent" width="30px" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!--  -->
+                                  <table class="contenttable" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="media-insta">
+                                          <a class="media-insta__link" href="#" target="_blank">
+                                            <img class="media-insta__img" width="140px" src="images/kitchen.jpg" alt="Photo kitchen"></a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!--  -->
+                                  <table class="indent" width="30px" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!--  -->
+                                  <table class="contenttable" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="media-insta">
+                                          <a class="media-insta__link" href="#" target="_blank" rel="noopener noreferrer">
+                                            <img class="media-insta__img" width="140px" src="images/paradise.jpg" alt="Photo paradise"></a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- / BLOCK WITH PHOTOS -->
+                              <tr>
+                                <td class="survez__button" align="center">
+                                  <a class="survez__link btn-big" href="#" target="_blank">SUIVRE <b>&#64;grandluxury</b></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!--/ SURVEZ -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- / more-info -->
+
+              <!-- soc-info -->
+              <tr align="center">
+                <td style="padding-top: 40px;">
+                  <table class="soc-info" role="presentation" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 28px; border-bottom: 1px solid #d8d8d8;  padding-top: 33px; border-top: 1px solid #d8d8d8;">
+                    <!-- SOC-WRAPP -->
+                    <tbody>
+                      <!-- SOC-INFO -->
+                      <tr align="center">
+                        <td>
+
+                          <!-- text-block -->
+                          <table id="soc-left" class="soc-info__item" border="0" cellspacing="0" cellpadding="0">
+                            <tbody align="center">
+                              <tr>
+                                <td class="link-block">
+                                  <a href="#" class="link-block__link">Hôtel de luxe & collections</a>
+                                  <a href="#" class="link-block__link">Trouver le séjour de vos rêves</a>
+                                  <a href="#" class="link-block__link">Inspirations</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!--/ text-block -->
+                          <table id="soc-center" class="soc-info__item" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td class="link-block">
+                                  <a href="#" target="_blank" class="link-block__link">Voir toutes nos offres</a>
+                                  <a href="#" target="_blank" class="link-block__link">La marque</a>
+                                  <a href="#" target="_blank" class="link-block__link">Mon compte</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <!-- ICONS -->
+                          <table id="soc-right" class="soc-info__item" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr class="social__icons">
+                                <td class="icon-item" align="center">
+                                  <a href="#" target="_blank"><img src="images/twitter.png" alt="twitter-icon"></a>
+                                </td>
+                                <td class="indent_small"></td>
+                                <td class="icon-item" align="center">
+                                  <a href="#" target="_blank"><img src="images/instagramm.png" alt="instagramm-icon"></a>
+                                </td>
+                                <td class="indent_small"></td>
+                                <td class="icon-item" align="center">
+                                  <a href="#" target="_blank"><img src="images/facebook.png" alt="facebook-icon"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="social__text" colspan="5">
+                                  GAGNEZ DES CRÉDITS GLH
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--/ ICONS -->
+                </td>
+              </tr>
+              <!--/ soc-info -->
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- FOOTER -->
+      <tr>
+        <td>
+          <table id="footer" class="container" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+
+              <tr>
+                <td class="footer__text">
+                  Grand Luxury Hotels, 11 Rue Saint-Florentin, 75008 Paris, France
+                </td>
+              </tr>
+              <tr>
+                <td class="footer__text">
+                  Vous recevez cet e-mail car vous vous êtes inscrit avec l’adresse <a class="footer__link" href="#"
+                    target="_blank">manu@elysee.fr</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="footer__text">
+                  Si vous préférez ne plus recevoir cette e-mail, vous pouvez vous <a class="footer__link" href="#"
+                    target="_blank">
+                    désinscrire</a> ou <a class="footer__link" href="#" target="_blank">modifiez vos préférences</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- / FOOTER -->
+    </tbody>
+  </table>
+  <!-- WRAPPER 600PX -->
+  </td>
+  </tr>
+
+
+  <!--END GENERAL WRAPPER 100% -->
+
+  </tbody>
+  </table>
+</body>
+
+</html>
